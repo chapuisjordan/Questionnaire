@@ -2,12 +2,12 @@
 
   $points = 0;
 
-  if ($_GET["reponseUne"] == "rep11"){
-    echo "Reponse 1 correct !";
+  if ($_GET["reponseUne"] == "rep13"){
+    $rep1b = "Reponse 1 correct !";
     $points += 1;
   }
   else {
-    echo "Reponse 1 fause !";
+     echo "Reponse 1 fausse !";
   };
 
   if ($_GET["q2"] == "rep21"){
@@ -59,19 +59,22 @@
     echo "Réponse 8 fausse !";
   };
 
-  if ($_GET["q9"] == "rep91"){
+  if ($_GET["q9"] == "rep92"){
     echo "Réponse 9 correct !";
     $points += 1;
   }else{
     echo "Réponse 9 fausse !";
   };
 
-  if ($_GET["rep10"] === "5" || "cinq"){
+  if ($_GET["rep10"] === "5" || "cinq" || "Cinq"){
     echo "Réponse 10 correct !";
     $points += 3 ;
   }else{
     echo "Réponse 10 fausse !";
   };
+
+
+
 
   if ($points < 5){
     echo "Tu es une belle grosse merde ! ";
