@@ -31,6 +31,7 @@ function createInput($type,$name,$value ="" ,$label)
   return "<label>" . $label . "</label><input type='" . $type .  "' name='" . $name . "' value='" . $value . "'>";
 
 }
+//Creation d'une phrase
 function phrasep($class,$label)
 {
   return "<p class='" . $class .  "'>" . $label . "</p>";
@@ -45,6 +46,18 @@ function title($class,$phrase)
 {
   $html ="<h1 class='" . $class . "'>" . $phrase . "</h1>";
   return $html;
+}
+//Insertion d'une image
+function imageInsert($image,$class)
+{
+  return "<img src='" . $image . "' class='" . $class ."'>";
+}
+//
+//Creation d'un titre question
+function titreQuestion($class,$phrase)
+{
+    return "<h2 class='" . $class ."'>" . $phrase . "</h2>";
+
 }
 //Mise en place d'un select
 function createSelect($class,$classtitre,$name, $label, $options)
