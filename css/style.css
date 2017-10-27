@@ -82,11 +82,33 @@ body{
 .Question1{
   font-size: 20px;
 }
-.classeTitre1{
+.classeTitre{
   font-size: 20px;
 }
 .centerPhp{
   width: 100%;
   display:flex;
   justify-content: center;
+  margin: 40px 0;
+}
+.backgroundHead{
+  background: url(../image/twd.jpg) no-repeat center;
+  background-size: cover;
+  height:700px;
+}
+.bouton{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 60px;
+  font-size: 50px;
+}
+.titlePrincipal{
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+}
+.separation{
+  width: 60%;
+  margin: 0 auto;
 }

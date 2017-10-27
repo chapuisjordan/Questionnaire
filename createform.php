@@ -35,9 +35,18 @@ function phrasep($class,$label)
 {
   return "<p class='" . $class .  "'>" . $label . "</p>";
 }
-
+//Creation d'un hr
+function barre($class)
+{
+  return "<hr class='" . $class . "'>";
+}
+//Mise en place d'un titre
+function title($class,$phrase)
+{
+  $html ="<h1 class='" . $class . "'>" . $phrase . "</h1>";
+  return $html;
+}
 //Mise en place d'un select
-
 function createSelect($class,$classtitre,$name, $label, $options)
 {
   $html ="<label class='" . $classtitre . "'>" . $label . "</label>";
@@ -51,8 +60,9 @@ function createSelect($class,$classtitre,$name, $label, $options)
   return $html;
 }
 
+
 //Generer un bouton submit
-function createSubmit($value)
+function createSubmit($value,$class)
 {
-  return "<input type='submit' value='" . $value ."'>";
+  return "<input type='submit' value='" . $value ."' class='" . $class . "'>";
 }
