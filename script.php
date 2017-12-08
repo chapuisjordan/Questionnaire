@@ -126,12 +126,12 @@
   <div class="points">
     <?php
     if ($points < 5){
-      echo "Tu es une belle grosse merde ! ";
+      echo "Connais-tu the Walking Dead ? ";
     }else{
       if ($points > 12){
-        echo "Féliciations !";
+        echo "Féliciations ! ";
       }else{
-        echo "Pas dégueu ! ";
+        echo "Pas mal ";
       }
     };
 
